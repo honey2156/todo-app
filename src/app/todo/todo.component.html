@@ -2,7 +2,7 @@
     <div class="input-group mb-3">
         <input type="text" [(ngModel)]="newTodo" placeholder="Enter todo task" class="form-control">
         <div class="input-group-append">
-            <button (click)="addTodo(newTodo)" class="btn btn-secondary btn-sm">Add task</button>
+            <button (click)="addTodo(newTodo)" class="btn btn-primary btn-sm">Add task</button>
         </div>
     </div>
 </div>
@@ -23,7 +23,7 @@
                 <td>{{todo}}</td>
                 <td style="width: 30%;">
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" #updatedTodo>
+                        <input type="text" class="form-control" #updatedTodo placeholder="Updated task">
                         <div class="input-group-append">
                             <button (click)="updateTodo(i, updatedTodo.value)" class="btn btn-secondary btn-sm">Update</button>
                         </div>
