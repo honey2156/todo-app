@@ -34,4 +34,3 @@ export class TodoComponent implements OnInit {
         this.todos[index] = updatedTodo
     }
 }
-console.log('hl')
