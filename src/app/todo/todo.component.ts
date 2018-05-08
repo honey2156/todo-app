@@ -15,7 +15,7 @@ export class TodoComponent implements OnInit {
     ngOnInit() {
     }
 
-    // add new task to the todo list
+    // add task to the todo list
     addTodo(item: string) {
         if (!item) {
             alert("Task can't be empty!")
@@ -34,3 +34,4 @@ export class TodoComponent implements OnInit {
         this.todos[index] = updatedTodo
     }
 }
+console.log('hl')
