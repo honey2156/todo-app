@@ -12,4 +12,8 @@ export class AppComponent {
     constructor() {
         this.todoList = []
     }
+
+    update(todoList:string[]){
+        this.todoList = todoList
+    }
 }

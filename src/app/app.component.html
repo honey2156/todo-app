@@ -4,5 +4,4 @@
     </h1>
     <hr style="border-width: 3px;">
 </div>
-<app-todo [todos]="todoList"></app-todo>
-
+<app-todo [todos]="todoList" (result)="update($event)"></app-todo>

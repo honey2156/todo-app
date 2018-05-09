@@ -1,8 +1,8 @@
 <div class="container">
     <div class="input-group mb-3">
-        <input type="text" [(ngModel)]="newTodo" placeholder="Enter todo task" class="form-control">
+        <input type="text" #newTodo placeholder="Enter todo task" class="form-control">
         <div class="input-group-append">
-            <button (click)="addTodo(newTodo)" class="btn btn-primary btn-sm">Add task</button>
+            <button (click)="addTodo(newTodo.value); newTodo.value=''" class="btn btn-primary btn-sm">Add task</button>
         </div>
     </div>
 </div>
